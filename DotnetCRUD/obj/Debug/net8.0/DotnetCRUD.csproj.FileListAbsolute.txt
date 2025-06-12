@@ -31,3 +31,4 @@ C:\Users\heitor.carvalho\desktop\projetos\dotnet_crud\DotnetCRUD\obj\Debug\net8.
 C:\Users\heitor.carvalho\desktop\projetos\dotnet_crud\DotnetCRUD\obj\Debug\net8.0\DotnetCRUD.pdb
 C:\Users\heitor.carvalho\desktop\projetos\dotnet_crud\DotnetCRUD\obj\Debug\net8.0\DotnetCRUD.genruntimeconfig.cache
 C:\Users\heitor.carvalho\desktop\projetos\dotnet_crud\DotnetCRUD\obj\Debug\net8.0\ref\DotnetCRUD.dll
+C:\Users\heitor.carvalho\desktop\projetos\dotnet_crud\DotnetCRUD\obj\Debug\net8.0\DotnetCRUD.sourcelink.json
