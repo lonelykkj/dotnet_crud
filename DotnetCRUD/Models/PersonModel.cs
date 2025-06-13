@@ -15,5 +15,9 @@ namespace DotnetCRUD.Models
 
         public Guid Id { get; init; } // Init permite que a propriedade seja definida apenas no momento da criação do objeto e não possa ser alterada posteriormente, garantindo que o ID seja imutável.
         public string Name { get; private set; }
+
+        public void ChangeName(string name){
+            Name = name; // Método para alterar o nome da pessoa. Isso permite que o nome seja modificado após a criação do objeto, mas mantém o ID imutável.
+        }
     }
 }

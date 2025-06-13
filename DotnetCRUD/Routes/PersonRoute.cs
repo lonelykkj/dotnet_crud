@@ -30,6 +30,19 @@ namespace DotnetCRUD.Routes
                 
                 return Results.Ok(people); // Retorna a lista de pessoas
             });
+
+            route.MapPut("/{id:guid}", async(Guid id, PersonRequest req, PersonContext context) => {
+
+                var person = await context.People.FindAsync(id) ; // Busca a pessoa pelo ID
+
+                if (person ==null)
+                    return Results.NotFound("Pessoa não encontrada."); 
+
+                person.ChangeName(req.name); // Atualiza o nome da pessoa
+                await context.SaveChangesAsync(); 
+
+                return Results.Ok(person);
+            });
         }
     }
 } 
