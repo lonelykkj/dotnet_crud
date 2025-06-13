@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotnetCRUD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f9e4a555a7515716584eda36efeb21c144f4c64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+024f4cdf94a42f0465a8f67752d32697f03f2a7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotnetCRUD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotnetCRUD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
