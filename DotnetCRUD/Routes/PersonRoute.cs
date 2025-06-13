@@ -25,10 +25,10 @@ namespace DotnetCRUD.Routes
                 var people = await context.People.ToListAsync(); // Recupera todas as pessoas do banco de dados e retorna como uma lista
 
                 if(people.Count == 0){
-                    return Results.NotFound("Nenhuma pessoa encontrada."); // Retorna 404 se não houver pessoas
+                    return Results.NotFound("Nenhuma pessoa encontrada.");
                 }
                 
-                return Results.Ok(people); // Retorna a lista de pessoas
+                return Results.Ok(people); 
             });
 
             route.MapPut("/{id:guid}", async(Guid id, PersonRequest req, PersonContext context) => {
@@ -38,10 +38,24 @@ namespace DotnetCRUD.Routes
                 if (person ==null)
                     return Results.NotFound("Pessoa não encontrada."); 
 
-                person.ChangeName(req.name); // Atualiza o nome da pessoa
+                person.ChangeName(req.name); 
                 await context.SaveChangesAsync(); 
 
                 return Results.Ok(person);
+            });
+
+            route.MapDelete("/{id:guid}", async(Guid id, PersonContext context) => {
+                var person = await context.People.FindAsync(id); 
+
+                if (person == null)
+                    return Results.NotFound("Pessoa não encontrada."); 
+
+
+                // context.People.Remove(person);
+                person.SetInactive();
+                await context.SaveChangesAsync(); 
+
+                return Results.Ok("Pessoa removida com sucesso."); 
             });
         }
     }
