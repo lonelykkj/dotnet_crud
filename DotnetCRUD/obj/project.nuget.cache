@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VQlVx9KKbKQ=",
+  "dgSpecHash": "7dfONxBNJc0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\heitor.carvalho\\desktop\\projetos\\dotnet_crud\\DotnetCRUD\\DotnetCRUD.csproj",
+  "projectFilePath": "C:\\Users\\heitor.carvalho\\Desktop\\Projetos\\dotnet_crud\\DotnetCRUD\\DotnetCRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\heitor.carvalho\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\heitor.carvalho\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.17\\microsoft.aspnetcore.openapi.8.0.17.nupkg.sha512",
